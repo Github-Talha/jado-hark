@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth" id="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <!-- tailwind and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jado Hark</title>
+  </head>
+
+  <body>
+    <header class="relative">
+      <nav class="flex justify-between items-center px-[35px] md:px-[120px]">
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="hidden lg:inline">
+          <ul class="flex text-black">
+            <li class="px-[32px] py-[16px] my-[21px]">Home</li>
+            <li class="px-[32px] py-[16px] my-[21px]">Service</li>
+            <li class="px-[32px] py-[16px] my-[21px]">Our Blog</li>
+            <li class="px-[32px] py-[16px] my-[21px]">About</li>
+            <li class="px-[32px] py-[16px] my-[21px]">Contact</li>
+            <li class="px-[32px] py-[16px] my-[21px]">Reviews</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div>
+        <div
+          class="bg-[url('images/bg-banner.jpg')] bg-cover bg-center bg-no-repeat h-[100vh] flex flex-col justify-center items-center text-white text-center px-4"
+        >
+          <h4 class="text-[24px] font-medium z-10">JADO REALTOR</h4>
+          <h1
+            class="text-4xl lg:text-[61px] font-medium mt-2 mb-6 leading-[100%] z-10"
+          >
+            Are you looking to <br />
+            buy or sell a home?
+          </h1>
+          <p class="z-10">
+            Look no further! Click the link below and get in touch with me
+            today!
+          </p>
+          <button
+            class="bg-[#03B5C3] mt-12 px-[32px] py-[16px] rounded-sm z-10"
+          >
+            GET IN TOUCH
+          </button>
+        </div>
+        <!-- Overlay -->
+        <div class="absolute bg-[#035c6345] inset-0"></div>
+        <!-- Icons -->
+        <div
+          class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
+        >
+          <ul class="md:space-x-2 md:flex">
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6 h-6" src="./images/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- happy client section  -->
+      <section class="m-[20px] lg:m-[120px]">
+        <!-- title -->
+        <div>
+          <h1 class="font-medium text-2xl mb-2 md:text-[60px]">
+            HAPPY CLIENTS
+          </h1>
+        </div>
+        <!-- client image and client info section  -->
+        <div class="flex flex-col md:flex-row md:gap-6 md:mt-[60px] relative">
+          <!-- client image -->
+          <div class="md:w-1/2 lg:w-[690px]">
+            <img src="./images/client.png" alt="" />
+          </div>
+          <!-- client info -->
+          <div class="flex-1 mt-auto lg:mb-8">
+            <!-- review  -->
+            <div>
+              <p>
+                Look no further! Click the link below and get in touch with me
+                today!Look no further! Click the link below and get in touch
+                with me today!Look no further! Click the link below and get in
+                touch with me today!
+              </p>
+              <h1 class="text-2xl md:text-[32px] font-medium">
+                FULLY SATISFIED
+              </h1>
+            </div>
+          </div>
+          <!-- arrow button  -->
+          <div class="flex absolute right-2 gap-1 md:gap-3">
+            <img
+              class="bg-[#03b5c3b3] md:p-3 rounded-sm"
+              src="./images/arrow-left.svg"
+              alt=""
+            />
+            <img
+              class="bg-[#03b5c3b3] md:p-3 rounded-sm"
+              src="./images/arrow-right.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- users section  -->
+      <section
+        class="bg-[url(./images/userBg.png)] w-full bg-cover flex items-center justify-center relative"
+      >
+        <div class="m-[20px] lg:m-[120px] z-10">
+          <!-- title  -->
+          <h1 class="text-2xl font-medium md:text-6xl mb-[60px]">
+            SOUNDS GOOD FROM USERS
+          </h1>
+          <!-- user image and user comment -->
+          <div class="flex flex-col lg:flex-row">
+            <!-- image and name  -->
+            <div class="bg-black text-white flex-1 p-4">
+              <div class="flex justify-center">
+                <img src="./images/user.png" alt="" />
+              </div>
+              <h4 class="text-[32px] mt-6">Maxian Kyo</h4>
+              <p>Product Designer</p>
+              <img class="mt-7" src="./images/5star.svg" alt="" />
+            </div>
+            <!-- comments -->
+            <div
+              class="bg-white bg-opacity-80 lg:w-3/5 flex items-center justify-center relative"
+            >
+              <h1 class="text-center font-medium md:text-2xl p-2 md:p-10">
+                Look no further! Click the link below and get in touch <br />
+                with me today!Look no further! Click the link below <br />
+                and get in touch with me today!Look no further! Click the link
+                below and get in touch with me today!
+              </h1>
+              <!-- arrow button  -->
+              <div
+                class="flex absolute right-[2px] md:right-6 bottom-[2px] md:bottom-6 gap-1 md:gap-3"
+              >
+                <img
+                  class="bg-[#03b5c3b3] md:p-3 rounded-sm"
+                  src="./images/arrow-left.svg"
+                  alt=""
+                />
+                <img
+                  class="bg-[#03b5c3b3] md:p-3 rounded-sm"
+                  src="./images/arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Overlay -->
+        <div class="absolute bg-[#00000041] inset-0"></div>
+      </section>
+      <!-- Awards wining section  -->
+      <section>
+        <div class="m-[20px] lg:m-[120px]">
+          <!-- title  -->
+          <h1 class="text-2xl font-medium md:text-6xl mb-[60px]">
+            OUR AWAEDS WINNING
+          </h1>
+          <!-- winning cards  -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="relative">
+              <img class="w-full" src="./images/award1.png" alt="" />
+              <img
+                class="absolute bottom-2 right-2"
+                src="./images/awardlogo1.png"
+                alt=""
+              />
+            </div>
+            <div class="relative">
+              <img class="w-full" src="./images/award2.png" alt="" />
+              <img
+                class="absolute bottom-2 right-2"
+                src="./images/awardlogo2.png"
+                alt=""
+              />
+            </div>
+            <div class="relative">
+              <img class="w-full" src="./images/award3.png" alt="" />
+              <img
+                class="absolute bottom-2 right-2"
+                src="./images/awardlogo3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- service section  -->
+      <section class="relative">
+        <!-- Overlay -->
+        <div class="absolute bg-[#00000040] inset-0 z-10"></div>
+
+        <div
+          class="bg-[url(./images/serviceBanner.png)] bg-no-repeat bg-cover relative z-1"
+        >
+          <!-- title  -->
+          <h1
+            class="text-2xl font-medium md:text-6xl mb-5 md:mb-[60px] ml-5 md:ml-[120px] pt-5 md:pt-[120px] text-white relative z-20"
+          >
+            SERVICES WE PROVIDE
+          </h1>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-[120px] mb-[120px]"
+          >
+            <div
+              class="flex flex-col items-center justify-center bg-[url(./images/service1.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+            >
+              <h1 class="text-[32px] font-medium mb-4">Buyer's Agent</h1>
+              <p>
+                Assistance buying a property including looking for purchasing a
+                home
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center bg-[url(./images/service2.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+            >
+              <h1 class="text-[32px] font-medium mb-4">Seller's Agent</h1>
+              <p>Assistance marketing and selling a property</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center bg-[url(./images/service3.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+            >
+              <h1 class="text-[32px] font-medium mb-4">
+                First Time Home Buyer
+              </h1>
+              <p>
+                Assistance buying a property for individuals who’ve never
+                purchased a home before including program and special loans for
+                first-time buyer
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center bg-[url(./images/service4.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+            >
+              <h1 class="text-[32px] font-medium mb-4">
+                Foreclosed propertires
+              </h1>
+              <p>
+                Assistance buying a property owned by the lender after the owner
+                failed to pay their mortgage
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center bg-[url(./images/service5.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+            >
+              <h1 class="text-[32px] font-medium mb-4">Luxury Properties</h1>
+              <p>
+                Assistance buying or selling highend properties often in the top
+                10% of listing or with excetional features
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center bg-[url(./images/service6.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+            >
+              <h1 class="text-[32px] font-medium mb-4">New construction</h1>
+              <p>
+                Assistance buying brand new homes that have never been lived in
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Client logos section  -->
+      <section>
+        <div
+          class="w-full flex flex-wrap gap-6 items-center justify-evenly border-t-2 border-black border-b-2 py-12"
+        >
+          <div><img src="./images/amazon.png" alt="" /></div>
+          <div><img src="./images/walmart.png" alt="" /></div>
+          <div><img src="./images/xart.png" alt="" /></div>
+          <div><img src="./images/apple.png" alt="" /></div>
+          <div><img src="./images/nike.png" alt="" /></div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex flex-col-reverse md:flex-row justify-between p-6">
+      <!-- social icons with link  -->
+      <div class="flex flex-col justify-between mt-8 md:mt-0">
+        <ul class="space-x-2 flex mb-4 md:mb-4">
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackfacebook.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackinstagram.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6 h-6" src="./images/blackyoutube.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div>
+          <p>
+            © 2023 , All Rights Reserved.
+            <a class="underline" href="#home"> Back to top </a>
+          </p>
+        </div>
+      </div>
+      <!-- contact us -->
+      <div class="space-y-9"> 
+        <!-- by number  -->
+        <div class="flex items-center gap-2">
+          <img class="p-3 rounded-full bg-[#00000010]" src="./images/call-calling.png" alt="" />
+          <span
+            ><p>Contact Us</p>
+            <p>612-483-1742</p></span
+          >
+        </div>
+        <!-- by email  -->
+        <div class="flex items-center gap-2">
+          <img class="p-3 rounded-full bg-[#00000010]" src="./images/sms-tracking.png" alt="" />
+          <span
+            ><p>Email</p>
+            <p>example@gmail.com</p></span
+          >
+        </div>
+        <!-- by physical address -->
+        <div class="flex items-center gap-2">
+          <img class="p-3 rounded-full bg-[#00000010]" src="./images/location.png" alt="" />
+          <span
+            ><p>Address</p>
+            <p>80 S 8th St Suite 4905, Minneapolis Mn 55402</p></span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
