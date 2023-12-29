@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <!-- tailwind and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jado Hark</title>
+  </head>
+  <body>
+    <header class="relative">
+      <nav
+        class="flex justify-between items-center px-[35px] md:px-[120px] bg-[#a8bcc1af] relative z-10"
+      >
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="hidden lg:inline">
+          <ul class="flex text-black">
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <div class="relative">
+              <div id="dropdown" class="flex">
+                <li
+                  class="pl-[32px] pr-[18px] py-[16px] my-[21px] cursor-pointer"
+                >
+                  Service
+                </li>
+                <img
+                  class="ease-in duration-100"
+                  id="upArrow"
+                  src="./images/uparrow.svg"
+                  alt=""
+                />
+              </div>
+              <ul
+                id="hiddenService"
+                class="absolute left-4 top-[102px] bg-[#5e86a1af] hidden"
+              >
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  Buying
+                </li>
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  Selling
+                </li>
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  Investing
+                </li>
+              </ul>
+            </div>
+
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Our Blog
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">About</li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Contact
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Reviews
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div>
+        <div
+          class="bg-[url('images/serviceBanner.png')] bg-cover bg-center bg-no-repeat h-[100vh] flex flex-col justify-center items-center text-white text-center px-4"
+        >
+          <h1
+            class="text-4xl lg:text-[61px] font-medium mt-2 mb-6 leading-[100%] z-10"
+          >
+            BUYING
+          </h1>
+        </div>
+        <!-- Overlay -->
+        <div class="absolute bg-[#282e317a] inset-0"></div>
+        <!-- Icons -->
+        <div
+          class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
+        >
+          <ul class="md:space-x-2 md:flex">
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6 h-6" src="./images/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- buying a home section  -->
+      <section class="m-[120px]">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- image -->
+          <div class="flex-1">
+            <img src="./images/buyingAHome.png" alt="" />
+          </div>
+          <!-- info -->
+          <div class="flex-1">
+            <h1 class="text-[40px] mb-6 font-medium">BUYING A HOME</h1>
+            <p>
+              Although being a new homeowner is an exciting experience, it can
+              also be overwhelming, especially if you’re a first-time buyer.
+              <br /><br />
+              Working with a credible real estate agent can make all the
+              difference, ensuring that the process goes smoothly. Jado Hark is
+              a trusted and respectable real estate agent in Minnesota. With his
+              proven expertise in buying or selling homes, he can help you find
+              exactly what you’re looking for. <br /><br />
+              Discover how a real estate agent can assist you in the home buying
+              process by contacting Jado Hark today.
+            </p>
+            <button class="py-4 px-8 bg-[#03B5C3] mt-16">CONTACT US</button>
+          </div>
+        </div>
+      </section>
+      <!-- more details about buying a home  -->
+      <section class="m-[120px]">
+        <hr class="border-black" />
+        <div class="w-1/2 ml-auto">
+          <!-- find the right home for your needs  -->
+          <h1 class="text-[40px] font-medium mb-6 mt-8">
+            Find the Right Home for Your Needs
+          </h1>
+          <p>
+            Searching for the perfect home on your own can be a tedious task. A
+            realtor takes into account all the specific details you’re seeking
+            in a new home and works to find them. <br />
+            <br />Using their professional network and resources, a real estate
+            agent knows exactly where to look. This enables you to narrow down
+            your options and find the best one that fits your criteria.
+          </p>
+          <hr class="border-black mt-12" />
+          <!-- Gain Access to Multiple Listing Service -->
+          <h1 class="text-[40px] font-medium mb-6 mt-8">
+            Gain Access to Multiple Listing Service
+          </h1>
+          <p>
+            The Multiple Listing Service (MLS) is a fundamental tools used in
+            the real estate industry. It alerts realtors to new listings or open
+            houses, enabling them to connect their clients with potential
+            sellers. When you work with a real estate agent, you have more
+            access to a wide range of options thanks to the MLS. You can view
+            options that are unavailable on normal property listing websites.
+          </p>
+          <hr class="border-black mt-12" />
+          <!-- Get Expert Guidance -->
+          <h1 class="text-[40px] font-medium mb-6 mt-8">Get Expert Guidance</h1>
+          <p>
+            An experienced realtor provides you with expertise and guidance you
+            need during the homebuying process. With their knowledge of the
+            market and prices, you can have more peace of mind in every step of
+            the home buying process. Having a trusted real estate agent by your
+            side can also help you avoid any mistakes or issues. This empowers
+            you to be confident when making significant decisions.
+          </p>
+          <hr class="border-black mt-12" />
+          <!-- Provide Value for Money -->
+          <h1 class="text-[40px] font-medium mb-6 mt-8">
+            Provide Value for Money
+          </h1>
+          <p>
+            You may have found a worthy listing that suits all your needs except
+            for your budget. By enlisting the help of a realtor, you’ll have
+            useful knowledge regarding the values of homes and neighborhoods.
+            This will allow you to make the most of your budget and get a
+            property in an excellent neighborhood that you can enjoy for many
+            years to come.
+          </p>
+          <hr class="border-black mt-12" />
+          <!-- Support and Assistance -->
+          <h1 class="text-[40px] font-medium mb-6 mt-8">
+            Support and Assistance
+          </h1>
+          <p>
+            The process of buying a home usually involves a significant amount
+            of paperwork. A real estate agent can help you navigate these
+            complicated forms effectively. Using their abilities and
+            understanding of the industry, they can also explain any unfamiliar
+            information to you. From home inspection to closing, you’ll be more
+            aware of what’s happening in every transaction.
+          </p>
+        </div>
+      </section>
+      <hr class="border-black" />
+      <!-- Purchase Your Dream Home   -->
+      <section class="m-[120px]">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- image -->
+          <div class="flex-1">
+            <img src="./images/purchaseHome.png" alt="" />
+          </div>
+          <!-- info -->
+          <div class="flex-1">
+            <h1 class="text-[40px] mb-6 font-medium">
+              Purchase Your Dream Home Today
+            </h1>
+            <p>
+              Let Jado Hark help you find and buy your dream home. Get in touch
+              today for more information or inquiries.
+            </p>
+            <button class="py-4 px-8 bg-[#03B5C3] mt-16">CONTACT US</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="border-black">
+    <footer class="flex flex-col-reverse md:flex-row justify-between p-6">
+      <!-- social icons with link  -->
+      <div class="flex flex-col justify-between mt-8 md:mt-0">
+        <ul class="space-x-2 flex mb-4 md:mb-4">
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackfacebook.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackinstagram.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6 h-6" src="./images/blackyoutube.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div>
+          <p>
+            © 2023 , All Rights Reserved.
+            <a class="underline" href="#home"> Back to top </a>
+          </p>
+        </div>
+      </div>
+      <!-- contact us -->
+      <div class="space-y-9">
+        <!-- by number  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/call-calling.png"
+            alt=""
+          />
+          <span
+            ><p>Contact Us</p>
+            <p>612-483-1742</p></span
+          >
+        </div>
+        <!-- by email  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/sms-tracking.png"
+            alt=""
+          />
+          <span
+            ><p>Email</p>
+            <p>example@gmail.com</p></span
+          >
+        </div>
+        <!-- by physical address -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/location.png"
+            alt=""
+          />
+          <span
+            ><p>Address</p>
+            <p>80 S 8th St Suite 4905, Minneapolis Mn 55402</p></span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

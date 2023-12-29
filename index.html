@@ -16,18 +16,61 @@
 
   <body>
     <header class="relative">
-      <nav class="flex justify-between items-center px-[35px] md:px-[120px]">
+      <nav
+        class="flex justify-between items-center px-[35px] md:px-[120px] bg-[#5e86a1af] relative z-10"
+      >
         <div>
           <img src="./images/logo.svg" alt="" />
         </div>
         <div class="hidden lg:inline">
           <ul class="flex text-black">
-            <li class="px-[32px] py-[16px] my-[21px]">Home</li>
-            <li class="px-[32px] py-[16px] my-[21px]">Service</li>
-            <li class="px-[32px] py-[16px] my-[21px]">Our Blog</li>
-            <li class="px-[32px] py-[16px] my-[21px]">About</li>
-            <li class="px-[32px] py-[16px] my-[21px]">Contact</li>
-            <li class="px-[32px] py-[16px] my-[21px]">Reviews</li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">Home</li>
+            <div class="relative">
+              <div id="dropdown" class="flex">
+                <li
+                  class="pl-[32px] pr-[18px] py-[16px] my-[21px] cursor-pointer"
+                >
+                  Service
+                </li>
+                <img
+                  class="ease-in duration-100"
+                  id="upArrow"
+                  src="./images/uparrow.svg"
+                  alt=""
+                />
+              </div>
+              <ul
+                id="hiddenService"
+                class="absolute left-4 top-[102px] bg-[#5e86a1af] hidden"
+              >
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  <a href="./bying.html">Buying</a>
+                </li>
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  <a href="">Selling</a>
+                </li>
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  <a href="">Investing</a>
+                </li>
+              </ul>
+            </div>
+
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Our Blog
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">About</li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Contact
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Reviews
+            </li>
           </ul>
         </div>
       </nav>
@@ -54,7 +97,7 @@
           </button>
         </div>
         <!-- Overlay -->
-        <div class="absolute bg-[#035c6345] inset-0"></div>
+        <div class="absolute bg-[#5e86a157] inset-0"></div>
         <!-- Icons -->
         <div
           class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
@@ -327,10 +370,14 @@
         </div>
       </div>
       <!-- contact us -->
-      <div class="space-y-9"> 
+      <div class="space-y-9">
         <!-- by number  -->
         <div class="flex items-center gap-2">
-          <img class="p-3 rounded-full bg-[#00000010]" src="./images/call-calling.png" alt="" />
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/call-calling.png"
+            alt=""
+          />
           <span
             ><p>Contact Us</p>
             <p>612-483-1742</p></span
@@ -338,7 +385,11 @@
         </div>
         <!-- by email  -->
         <div class="flex items-center gap-2">
-          <img class="p-3 rounded-full bg-[#00000010]" src="./images/sms-tracking.png" alt="" />
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/sms-tracking.png"
+            alt=""
+          />
           <span
             ><p>Email</p>
             <p>example@gmail.com</p></span
@@ -346,7 +397,11 @@
         </div>
         <!-- by physical address -->
         <div class="flex items-center gap-2">
-          <img class="p-3 rounded-full bg-[#00000010]" src="./images/location.png" alt="" />
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/location.png"
+            alt=""
+          />
           <span
             ><p>Address</p>
             <p>80 S 8th St Suite 4905, Minneapolis Mn 55402</p></span
@@ -354,5 +409,6 @@
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
