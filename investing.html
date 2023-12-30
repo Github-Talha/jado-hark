@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <!-- tailwind and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jado Hark | Investing</title>
+  </head>
+  <body>
+    <header class="relative">
+      <nav
+        class="flex justify-between items-center px-[35px] md:px-[120px] bg-[#a8bcc1af] relative z-10"
+      >
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="hidden lg:inline">
+          <ul class="flex text-black">
+            <a href="index.html">
+              <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">Home</li>
+            </a>
+            <div class="relative">
+              <div id="dropdown" class="flex">
+                <li
+                  class="pl-[32px] pr-[18px] py-[16px] my-[21px] cursor-pointer"
+                >
+                  Service
+                </li>
+                <img
+                  class="ease-in duration-100"
+                  id="upArrow"
+                  src="./images/uparrow.svg"
+                  alt=""
+                />
+              </div>
+              <ul
+                id="hiddenService"
+                class="absolute left-4 top-[102px] bg-[#5e86a1af] hidden"
+              >
+                <a href="buying.html">
+                  <li
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                  >
+                    Buying
+                  </li>
+                </a>
+                <a href="selling.html">
+                  <li
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                  >
+                    Selling
+                  </li>
+                </a>
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  Investing
+                </li>
+              </ul>
+            </div>
+
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Our Blog
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">About</li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Contact
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Reviews
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div>
+        <div
+          class="bg-[url('images/investingBanner.png')] bg-cover bg-center bg-no-repeat h-[100vh] flex flex-col justify-center items-center text-white text-center px-4"
+        >
+          <h1
+            class="text-4xl lg:text-[61px] font-medium mt-2 mb-6 leading-[100%] z-10"
+          >
+            INVESTING
+          </h1>
+        </div>
+        <!-- Overlay -->
+        <div class="absolute bg-[#282e317a] inset-0"></div>
+        <!-- Icons -->
+        <div
+          class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
+        >
+          <ul class="space-y-2 md:space-y-0 md:space-x-2 md:flex">
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6 h-6" src="./images/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- realstate section  -->
+      <section class="m-5 lg:m-[120px]">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- image -->
+          <div class="flex-1">
+            <img src="./images/realState.png" alt="" />
+          </div>
+          <!-- info -->
+          <div class="flex-1">
+            <h1 class="text-[40px] mb-6 font-medium">REAL ESTATE INVESTMENT</h1>
+            <p>
+              Jado Realtor has helped many clients create and preserve their
+              finances by providing them with guidance in real estate investment
+              sales. As a realtor in Minneapolis with access to a huge network
+              of brokerages statewide, Jado Hark can be your mentor in investing
+              in the right opportunities. Find the best investment properties
+              near you today.
+            </p>
+            <button class="py-4 px-8 bg-[#03B5C3] mt-16 font-medium">
+              CONTACT US
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr class="border-black mx-[120px]" />
+      <!-- more about selling section  -->
+      <section class="mx-[20px] lg:mx-[120px] mb-5 lg:mb-[120px]">
+        <div class="w-full lg:w-1/2 lg:ml-auto">
+          <h1
+            class="mb-6 mt-2 lg:mt-6 text-[40px] font-medium leading-10 uppercase"
+          >
+            Why You Should Get Help from a Realtor When Selling a Home
+          </h1>
+          <p
+            class="relative ml-3 before:content-['\2022'] before:absolute before:-left-3 before:-top-1 before:text-[22px]"
+          >
+            When deciding to buy real estate as an investment, you either need
+            to afford the initial cash outlay or have the ability to take on
+            mortgage payments even if you cannot collect rent.
+          </p>
+          <p
+            class="relative ml-3 before:content-['\2022'] before:absolute before:-left-3 before:-top-1 before:text-[22px]"
+          >
+            You should plan your investment property purchase carefully. Take
+            into account the ongoing costs for repairs, utilities, taxes, and
+            other expenses.
+          </p>
+          <p
+            class="relative ml-3 before:content-['\2022'] before:absolute before:-left-3 before:-top-1 before:text-[22px]"
+          >
+            Make sure you research each property you plan to invest in. This is
+            especially crucial if you are purchasing land that you wish to
+            develop.
+          </p>
+          <p
+            class="relative ml-3 before:content-['\2022'] before:absolute before:-left-3 before:-top-1 before:text-[22px]"
+          >
+            If you’re new to investment properties, you should start small so
+            you can learn the ropes without being overwhelmed. Once you get the
+            hang of it, you can start investing in larger properties.
+          </p>
+          <hr class="border-black my-12" />
+          <h1
+            class="mb-6 mt-2 lg:mt-6 text-[40px] font-medium leading-10 uppercase"
+          >
+            How Do You Invest In Real Estate?
+          </h1>
+          <p>
+            There are several ways one can get started in real estate
+            investment. The most common is to purchase a multi-unit property and
+            begin by renting each unit out. Another prevalent choice is buying a
+            single-family house and then renting it to a qualified renter.
+            <br />
+            <br />
+            Many investors buy and sell investment properties too. The idea to
+            flip a home is commonplace but is more ideal for investors with
+            experience.
+          </p>
+        </div>
+      </section>
+      <hr class="border-black mx-5 lg:mx-[120px] mb-8" />
+      <!-- Get Help For Your Investment -->
+      <section class="m-5 lg:m-[120px]">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- image -->
+          <div class="flex-1">
+            <img src="./images/getHelpFor.png" alt="" />
+          </div>
+          <!-- info -->
+          <div class="flex-1">
+            <h1 class="text-[40px] mb-6 font-medium uppercase leading-10">
+              Get Help For Your Investment Properties From Jado Realtor
+            </h1>
+            <p>
+              Real estate has always been a sound option as an investment. Its
+              ability to generate passive income can keep people going so long
+              as they know how to manage their properties well. However, you
+              must be ready to begin your journey in investing in real estate.
+              Not only will you need to put down a huge amount of money upfront,
+              but you also have to think about the ongoing expenses of buying a
+              new property. An experienced realtor in Minneapolis can provide
+              you with in-depth knowledge and techniques on how you can make the
+              most of your investments. They can even guide people who are new
+              to investing and simply want to flip a home. This is what Jado
+              Realtor is all about. As the owner of the firm, Jado Hark has
+              helped many investors in Minneapolis succeed in creating and
+              growing their wealth. Hark is experienced in both residential and
+              commercial real estate and is known for his ability in satisfying
+              customers for both buying and selling investment properties. Jado
+              Hark has access to one of the biggest brokerages in Minnesota.
+              This network allows him to get the best pricing for his clients
+              and ensure that they get the deals they deserve. Furthermore, Hark
+              is committed to providing all of his clients with genuine, honest,
+              and reliable property investment solutions. These characteristics
+              have allowed him to transform his agency into one of the best real
+              estate firms in the state today. Give Jado Realtor a call at
+              612-483-1742 or contact him directly on the website.
+            </p>
+            <button class="py-4 px-8 bg-[#03B5C3] mt-16 font-medium">
+              CONTACT US
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="border-black" />
+    <footer class="flex flex-col-reverse md:flex-row justify-between p-6">
+      <!-- social icons with link  -->
+      <div class="flex flex-col justify-between mt-8 md:mt-0">
+        <ul class="space-x-2 flex mb-4 md:mb-4">
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackfacebook.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackinstagram.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6 h-6" src="./images/blackyoutube.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div>
+          <p>
+            © 2023 , All Rights Reserved.
+            <a class="underline" href="#home"> Back to top </a>
+          </p>
+        </div>
+      </div>
+      <!-- contact us -->
+      <div class="space-y-9">
+        <!-- by number  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/call-calling.png"
+            alt=""
+          />
+          <span
+            ><p>Contact Us</p>
+            <p>612-483-1742</p></span
+          >
+        </div>
+        <!-- by email  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/sms-tracking.png"
+            alt=""
+          />
+          <span
+            ><p>Email</p>
+            <p>example@gmail.com</p></span
+          >
+        </div>
+        <!-- by physical address -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/location.png"
+            alt=""
+          />
+          <span
+            ><p>Address</p>
+            <p>80 S 8th St Suite 4905, Minneapolis Mn 55402</p></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

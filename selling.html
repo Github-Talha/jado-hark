@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <!-- tailwind and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Jado hark / Selling</title>
+  </head>
+  <body>
+    <header class="relative">
+      <nav
+        class="flex justify-between items-center px-[35px] md:px-[120px] bg-[#a8bcc1af] relative z-10"
+      >
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="hidden lg:inline">
+          <ul class="flex text-black">
+            <a href="index.html">
+              <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">Home</li>
+            </a>
+            <div class="relative">
+              <div id="dropdown" class="flex">
+                <li
+                  class="pl-[32px] pr-[18px] py-[16px] my-[21px] cursor-pointer"
+                >
+                  Service
+                </li>
+                <img
+                  class="ease-in duration-100"
+                  id="upArrow"
+                  src="./images/uparrow.svg"
+                  alt=""
+                />
+              </div>
+              <ul
+                id="hiddenService"
+                class="absolute left-4 top-[102px] bg-[#5e86a1af] hidden"
+              >
+                <a href="buying.html">
+                  <li
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                  >
+                    Buying
+                  </li>
+                </a>
+                <li
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                >
+                  Selling
+                </li>
+                <a href="investing.html">
+                  <li
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                  >
+                    Investing
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Our Blog
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">About</li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Contact
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+              Reviews
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div>
+        <div
+          class="bg-[url('images/sellingBanner.png')] bg-cover bg-center bg-no-repeat h-[100vh] flex flex-col justify-center items-center text-white text-center px-4"
+        >
+          <h1
+            class="text-4xl lg:text-[61px] font-medium mt-2 mb-6 leading-[100%] z-10"
+          >
+            SELLING
+          </h1>
+        </div>
+        <!-- Overlay -->
+        <div class="absolute bg-[#282e317a] inset-0"></div>
+        <!-- Icons -->
+        <div
+          class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
+        >
+          <ul class="space-y-2 md:space-y-0 md:space-x-2 md:flex">
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6 h-6" src="./images/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- selling a home section  -->
+      <section class="m-5 lg:m-[120px]">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- image -->
+          <div class="flex-1">
+            <img src="./images/sellingAHome.png" alt="" />
+          </div>
+          <!-- info -->
+          <div class="flex-1">
+            <h1 class="text-[40px] mb-6 font-medium">SELLING A HOME</h1>
+            <p>
+              Selling a home shouldn’t be a second job for anyone. At Jado
+              Realtor, we take the stress out of being a property seller by
+              providing you with a range of selling options to choose from. Get
+              the best deals when you choose to sell your house in Minneapolis.
+            </p>
+            <button class="py-4 px-8 bg-[#03B5C3] mt-16 font-medium">
+              CONTACT US
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr class="border-black" />
+      <!-- more about selling section  -->
+      <section class="mx-[20px] lg:mx-[120px] mb-5 lg:mb-[120px]">
+        <div class="w-full lg:w-1/2 lg:ml-auto">
+          <h1 class="mb-6 mt-2 lg:mt-6 text-[40px] font-medium leading-10 uppercase">
+            Why You Should Get Help from a Realtor When Selling a Home
+          </h1>
+          <p
+            class="relative before:content-['\2022'] before:mr-2 before:text-[20px] before:absolute before:-left-3 text-[18px] font-medium before:-top-[2px]"
+          >
+            A realtor avoids emotional sales:
+          </p>
+          <p class="mb-6">
+            Home selling is an emotional process especially when it is sold by
+            the owner. Getting help from a real estate agent ensures that you
+            can avoid making mistakes such as being offended by low offers,
+            giving in too easily, or overpricing the property. An experienced
+            realtor can handle rejections and can even provide positive comments
+            even after negative feedback, increasing the chances of selling a
+            home.
+          </p>
+          <p
+            class="relative before:content-['\2022'] before:mr-2 before:text-[20px] before:absolute before:-left-3 text-[18px] font-medium before:-top-[2px]"
+          >
+            A realtor avoids emotional sales:
+          </p>
+          <p class="mb-6">
+            Home selling is an emotional process especially when it is sold by
+            the owner. Getting help from a real estate agent ensures that you
+            can avoid making mistakes such as being offended by low offers,
+            giving in too easily, or overpricing the property. An experienced
+            realtor can handle rejections and can even provide positive comments
+            even after negative feedback, increasing the chances of selling a
+            home.
+          </p>
+        </div>
+      </section>
+      <hr class="border-black mx-5 lg:mx-[120px] mb-8" />
+      <!-- selling a home section  -->
+      <section class="m-5 lg:m-[120px]">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- image -->
+          <div class="flex-1">
+            <img src="./images/sellyourhome.png" alt="" />
+          </div>
+          <!-- info -->
+          <div class="flex-1">
+            <h1 class="text-[40px] mb-6 font-medium uppercase leading-10">
+              Sell Your Home With the Help of Jado Realtor
+            </h1>
+            <p>
+              Jado Hark started his career as a real estate agent at the age of
+              23 and has become one of the top agents in Minneapolis and the
+              state of Minnesota. He is supported by one of the best real estate
+              brokerages in the state that will allow his clients to access a
+              huge network when selling a home. As the owner of Jado Realtor,
+              Hark believes in being honest to his customers and ensuring that
+              they get the best real estate services at all times. That is why
+              many of his former clients return or refer him to their friends
+              when it comes to property selling. If you want to access the
+              knowledge and experience of a real estate expert in Minnesota,
+              then Jado Realtor has you covered. Give us a call at 612-483-1742
+              and let’s discuss the best approach in selling your house.
+            </p>
+            <button class="py-4 px-8 bg-[#03B5C3] mt-16 font-medium">
+              CONTACT US
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr class="border-black" />
+    </main>
+    <footer class="flex flex-col-reverse md:flex-row justify-between p-6">
+      <!-- social icons with link  -->
+      <div class="flex flex-col justify-between mt-8 md:mt-0">
+        <ul class="space-x-2 flex mb-4 md:mb-4">
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackfacebook.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackinstagram.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6 h-6" src="./images/blackyoutube.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div>
+          <p>
+            © 2023 , All Rights Reserved.
+            <a class="underline" href="#home"> Back to top </a>
+          </p>
+        </div>
+      </div>
+      <!-- contact us -->
+      <div class="space-y-9">
+        <!-- by number  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/call-calling.png"
+            alt=""
+          />
+          <span
+            ><p>Contact Us</p>
+            <p>612-483-1742</p></span
+          >
+        </div>
+        <!-- by email  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/sms-tracking.png"
+            alt=""
+          />
+          <span
+            ><p>Email</p>
+            <p>example@gmail.com</p></span
+          >
+        </div>
+        <!-- by physical address -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/location.png"
+            alt=""
+          />
+          <span
+            ><p>Address</p>
+            <p>80 S 8th St Suite 4905, Minneapolis Mn 55402</p></span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
