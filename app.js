@@ -16,3 +16,4 @@ document.getElementById("selling").addEventListener("click", function () {
 document.getElementById("selling2").addEventListener("click", function () {
   window.location.href = "selling.html";
 });
+

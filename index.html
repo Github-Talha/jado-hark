@@ -12,12 +12,90 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Jado Hark</title>
+    <style>
+      /* nav */
+      @keyframes nav {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 100;
+        }
+      }
+      /* facebookIcon  */
+      @keyframes facebookIcon {
+        from {
+          transform: translateX(200px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 100;
+        }
+      }
+      nav {
+        animation: nav 1s ease-out 1;
+      }
+      #facebookIcon {
+        animation: facebookIcon linear;
+        animation-timeline: view();
+        animation-range-start: 150px;
+        animation-range-end: 250px;
+      }
+      #instagramIcon {
+        animation: facebookIcon linear;
+        animation-timeline: view();
+        animation-range-start: 150px;
+        animation-range-end: 250px;
+      }
+      #youtubeIcon {
+        animation: facebookIcon linear;
+        animation-timeline: view();
+        animation-range-start: 150px;
+        animation-range-end: 250px;
+      }
+      @keyframes fromLeft {
+        from {
+          transform: scale(0.7);
+          opacity: 0.8;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      #happyClientImage,
+      .animate {
+        animation: fromLeft linear;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 500px;
+      }
+      @keyframes leftFade {
+        from {
+          transform: translateX(-80%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      #logos {
+        animation: leftFade linear;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 400px;
+      }
+    </style>
   </head>
 
   <body>
     <header class="relative">
       <nav
-        class="flex justify-between items-center px-[35px] md:px-[120px] bg-[#5e86a1af] relative z-10"
+        class="absolute top-0 w-full flex justify-between items-center px-[35px] md:px-[120px] bg-[#5e86a1af] z-20"
       >
         <div>
           <img src="./images/logo.svg" alt="" />
@@ -41,7 +119,7 @@
               </div>
               <ul
                 id="hiddenService"
-                class="absolute left-4 top-[102px] bg-[#5e86a1af] hidden"
+                class="absolute left-4 top-[101px] bg-[#5e86a1af] hidden"
               >
                 <li
                   id="buying"
@@ -65,23 +143,21 @@
               </ul>
             </div>
 
-            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
-              Our Blog
-            </li>
-            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">About</li>
-            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
-              Contact
-            </li>
-            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
-              Reviews
-            </li>
+            <a href="./ourblog.html">
+              <li class="px-[32px] py-[16px] my-[21px]">Our Blog</li>
+            </a>
+            <a href="./about.html">
+              <li class="px-[32px] py-[16px] my-[21px]">About</li>
+            </a>
+            <li class="px-[32px] py-[16px] my-[21px]">Contact</li>
+            <li class="px-[32px] py-[16px] my-[21px]">Reviews</li>
           </ul>
         </div>
       </nav>
       <!-- banner section  -->
       <div>
         <div
-          class="bg-[url('images/bg-banner.jpg')] bg-cover bg-center bg-no-repeat h-[100vh] flex flex-col justify-center items-center text-white text-center px-4"
+          class="bg-[url('images/bg-banner.jpg')] bg-cover bg-center bg-no-repeat h-[100vh] flex flex-col justify-center items-center text-white text-center px-4 z-10"
         >
           <h4 class="text-[24px] font-medium z-10">JADO REALTOR</h4>
           <h1
@@ -107,17 +183,17 @@
           class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
         >
           <ul class="md:space-x-2 md:flex">
-            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+            <li id="facebookIcon" class="p-3 bg-[#FFFFFF1A] rounded-xl">
               <a href=""
                 ><img class="w-6" src="./images/facebook.svg" alt=""
               /></a>
             </li>
-            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+            <li id="instagramIcon" class="p-3 bg-[#FFFFFF1A] rounded-xl">
               <a href=""
                 ><img class="w-6" src="./images/instagram.svg" alt=""
               /></a>
             </li>
-            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+            <li id="youtubeIcon" class="p-3 bg-[#FFFFFF1A] rounded-xl">
               <a href=""
                 ><img class="w-6 h-6" src="./images/youtube.svg" alt=""
               /></a>
@@ -138,7 +214,7 @@
         <!-- client image and client info section  -->
         <div class="flex flex-col md:flex-row md:gap-6 md:mt-[60px] relative">
           <!-- client image -->
-          <div class="md:w-1/2 lg:w-[690px]">
+          <div id="happyClientImage" class="md:w-1/2 lg:w-[690px]">
             <img src="./images/client.png" alt="" />
           </div>
           <!-- client info -->
@@ -185,7 +261,7 @@
             <!-- image and name  -->
             <div class="bg-black text-white flex-1 p-4">
               <div class="flex justify-center">
-                <img src="./images/user.png" alt="" />
+                <img class="animate" src="./images/user.png" alt="" />
               </div>
               <h4 class="text-[32px] mt-6">Maxian Kyo</h4>
               <p>Product Designer</p>
@@ -232,25 +308,25 @@
           <!-- winning cards  -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div class="relative">
-              <img class="w-full" src="./images/award1.png" alt="" />
+              <img class="w-full animate" src="./images/award1.png" alt="" />
               <img
-                class="absolute bottom-2 right-2"
+                class="absolute bottom-2 right-2 animate"
                 src="./images/awardlogo1.png"
                 alt=""
               />
             </div>
             <div class="relative">
-              <img class="w-full" src="./images/award2.png" alt="" />
+              <img class="w-full animate" src="./images/award2.png" alt="" />
               <img
-                class="absolute bottom-2 right-2"
+                class="absolute bottom-2 right-2 animate"
                 src="./images/awardlogo2.png"
                 alt=""
               />
             </div>
             <div class="relative">
-              <img class="w-full" src="./images/award3.png" alt="" />
+              <img class="w-full animate" src="./images/award3.png" alt="" />
               <img
-                class="absolute bottom-2 right-2"
+                class="absolute bottom-2 right-2 animate"
                 src="./images/awardlogo3.png"
                 alt=""
               />
@@ -276,7 +352,7 @@
             class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-[120px] mb-[120px]"
           >
             <div
-              class="flex flex-col items-center justify-center bg-[url(./images/service1.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+              class="flex flex-col items-center justify-center bg-[url(./images/service1.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full animate"
             >
               <h1 class="text-[32px] font-medium mb-4">Buyer's Agent</h1>
               <p>
@@ -285,13 +361,13 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center justify-center bg-[url(./images/service2.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+              class="flex flex-col items-center justify-center bg-[url(./images/service2.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full animate"
             >
               <h1 class="text-[32px] font-medium mb-4">Seller's Agent</h1>
               <p>Assistance marketing and selling a property</p>
             </div>
             <div
-              class="flex flex-col items-center justify-center bg-[url(./images/service3.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+              class="flex flex-col items-center justify-center bg-[url(./images/service3.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full animate"
             >
               <h1 class="text-[32px] font-medium mb-4">
                 First Time Home Buyer
@@ -303,7 +379,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center justify-center bg-[url(./images/service4.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+              class="flex flex-col items-center justify-center bg-[url(./images/service4.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full animate"
             >
               <h1 class="text-[32px] font-medium mb-4">
                 Foreclosed propertires
@@ -314,7 +390,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center justify-center bg-[url(./images/service5.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+              class="flex flex-col items-center justify-center bg-[url(./images/service5.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full animate"
             >
               <h1 class="text-[32px] font-medium mb-4">Luxury Properties</h1>
               <p>
@@ -323,7 +399,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center justify-center bg-[url(./images/service6.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full"
+              class="flex flex-col items-center justify-center bg-[url(./images/service6.png)] bg-cover lg:p-[129px] text-center z-10 h-[466px] w-full animate"
             >
               <h1 class="text-[32px] font-medium mb-4">New construction</h1>
               <p>
@@ -336,6 +412,7 @@
       <!-- Client logos section  -->
       <section>
         <div
+          id="logos"
           class="w-full flex flex-wrap gap-6 items-center justify-evenly border-t-2 border-black border-b-2 py-12"
         >
           <div><img src="./images/amazon.png" alt="" /></div>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <!-- tailwind and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jado Hark / Our Blog</title>
+  </head>
+  <body>
+    <header class="relative mb-[120px]">
+      <nav
+        class="absolute top-0 w-full flex justify-between items-center px-[35px] md:px-[120px] bg-[#a8bcc1af] z-20"
+      >
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="hidden lg:inline">
+          <ul class="flex text-black">
+            <a href="index.html">
+              <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">Home</li>
+            </a>
+            <div class="relative">
+              <div id="dropdown" class="flex">
+                <li
+                  class="pl-[32px] pr-[18px] py-[16px] my-[21px] cursor-pointer"
+                >
+                  Service
+                </li>
+                <img
+                  class="ease-in duration-100"
+                  id="upArrow"
+                  src="./images/uparrow.svg"
+                  alt=""
+                />
+              </div>
+              <ul
+                id="hiddenService"
+                class="absolute left-4 top-[101px] bg-[#a8bcc1cf] hidden"
+              >
+                <a href="buying.html">
+                  <li
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#a8bcc1af] ease-in duration-100"
+                  >
+                    Buying
+                  </li>
+                </a>
+                <a href="selling.html">
+                  <li
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#a8bcc1af] ease-in duration-100"
+                  >
+                    Selling
+                  </li>
+                </a>
+                <a href="./investing.html">
+                  <li
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#a8bcc1af] ease-in duration-100"
+                  >
+                    Investing
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <li class="px-[32px] py-[16px] my-[21px]">
+              Our Blog
+            </li>
+            <a href="./about.html">
+              <li class="px-[32px] py-[16px] my-[21px]">
+                About
+              </li>
+            </a>
+            <li class="px-[32px] py-[16px] my-[21px]">
+              Contact
+            </li>
+            <li class="px-[32px] py-[16px] my-[21px]">
+              Reviews
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div>
+        <div
+          class="bg-[url('images/sellingAHome.png')] bg-cover bg-center bg-no-repeat h-[100vh] flex flex-col justify-center items-center text-white text-center px-4"
+        >
+          <h1
+            class="text-4xl lg:text-[61px] font-medium mt-2 mb-6 leading-[100%] z-10"
+          >
+            FIRST-TIME HOMEBUYERS: <br />
+            WHAT YOU NEED TO KNOW
+          </h1>
+          <h4 class="text-[24px] font-medium z-10">
+            BY ADMIN IN UNCATEGORIZEDWITH 0 COMMENTS
+          </h4>
+          <p class="z-10">
+            Buying your first home is an important step in life. There are many
+            things to do when trying to buy a house to be <br />
+            prepared for this big purchase.Check out these helpful tips about
+            buying the first home that your Jado Realtor has <br />
+            provided to help get you ready for this exciting time in your […]
+          </p>
+          <button
+            class="bg-[#03B5C3] mt-12 px-[32px] py-[16px] rounded-sm z-10 text-black font-medium"
+          >
+            READ MORE
+          </button>
+        </div>
+        <!-- Icons -->
+        <div
+          class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
+        >
+          <ul class="space-y-2 md:space-y-0 md:space-x-2 md:flex">
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6" src="./images/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="p-3 bg-[#FFFFFF1A] rounded-xl">
+              <a href=""
+                ><img class="w-6 h-6" src="./images/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <hr class="border-black" />
+    <footer class="flex flex-col-reverse md:flex-row justify-between p-6">
+      <!-- social icons with link  -->
+      <div class="flex flex-col justify-between mt-8 md:mt-0">
+        <ul class="space-x-2 flex mb-4 md:mb-4">
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackfacebook.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6" src="./images/blackinstagram.png" alt=""
+            /></a>
+          </li>
+          <li class="p-3 bg-[#00000010] rounded-full">
+            <a href=""
+              ><img class="w-6 h-6" src="./images/blackyoutube.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div>
+          <p>
+            © 2023 , All Rights Reserved.
+            <a class="underline" href="#home"> Back to top </a>
+          </p>
+        </div>
+      </div>
+      <!-- contact us -->
+      <div class="space-y-9">
+        <!-- by number  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/call-calling.png"
+            alt=""
+          />
+          <span
+            ><p>Contact Us</p>
+            <p>612-483-1742</p></span
+          >
+        </div>
+        <!-- by email  -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/sms-tracking.png"
+            alt=""
+          />
+          <span
+            ><p>Email</p>
+            <p>example@gmail.com</p></span
+          >
+        </div>
+        <!-- by physical address -->
+        <div class="flex items-center gap-2">
+          <img
+            class="p-3 rounded-full bg-[#00000010]"
+            src="./images/location.png"
+            alt=""
+          />
+          <span
+            ><p>Address</p>
+            <p>80 S 8th St Suite 4905, Minneapolis Mn 55402</p></span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

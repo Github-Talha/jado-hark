@@ -16,7 +16,7 @@
   <body>
     <header class="relative">
       <nav
-        class="flex justify-between items-center px-[35px] md:px-[120px] bg-[#a8bcc1af] relative z-10"
+        class="absolute top-0 w-full flex justify-between items-center px-[35px] md:px-[120px] bg-[#a8bcc1af] z-10"
       >
         <div>
           <img src="./images/logo.svg" alt="" />
@@ -42,34 +42,40 @@
               </div>
               <ul
                 id="hiddenService"
-                class="absolute left-4 top-[102px] bg-[#5e86a1af] hidden"
+                class="absolute left-4 top-[101px] bg-[#a8bcc1cf] hidden"
               >
                 <a href="buying.html">
                   <li
-                    class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#a8bcc1af] ease-in duration-100 cursor-pointer"
                   >
                     Buying
                   </li>
                 </a>
                 <a href="selling.html">
                   <li
-                    class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                    class="py-4 pl-4 pr-[40px] hover:bg-[#a8bcc1af] ease-in duration-100 cursor-pointer"
                   >
                     Selling
                   </li>
                 </a>
                 <li
-                  class="py-4 pl-4 pr-[40px] hover:bg-[#78a6c5da] ease-in duration-100 cursor-pointer"
+                  class="py-4 pl-4 pr-[40px] hover:bg-[#a8bcc1af] ease-in duration-100 cursor-pointer"
                 >
                   Investing
                 </li>
               </ul>
             </div>
 
-            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
-              Our Blog
-            </li>
-            <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">About</li>
+            <a href="./ourblog.html">
+              <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+                Our Blog
+              </li>
+            </a>
+            <a href="./about.html">
+              <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
+                About
+              </li>
+            </a>
             <li class="px-[32px] py-[16px] my-[21px] cursor-pointer">
               Contact
             </li>
@@ -91,7 +97,7 @@
           </h1>
         </div>
         <!-- Overlay -->
-        <div class="absolute bg-[#282e317a] inset-0"></div>
+        <div class="absolute bg-[#282e317a] inset-0 backdrop-blur-[4px]"></div>
         <!-- Icons -->
         <div
           class="absolute bottom-1 right-1 md:right-[120px] md:bottom-[120px]"
